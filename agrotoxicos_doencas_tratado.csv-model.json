@@ -1,0 +1,270 @@
+{
+    "id": "agrotoxicos_doencas_tratado.csv",
+    "name": "agrotoxicos_doencas_tratado.csv",
+    "description": null,
+    "sourceColumns": [
+        {
+            "id": "HN951",
+            "hNodeId": "HN951",
+            "columnName": "Grupo Químico"
+        },
+        {
+            "id": "HN952",
+            "hNodeId": "HN952",
+            "columnName": "Classe"
+        },
+        {
+            "id": "HN953",
+            "hNodeId": "HN953",
+            "columnName": "Sintomas de intoxicação aguda"
+        }
+    ],
+    "mappingToSourceColumns": [
+        {
+            "id": "HN951",
+            "sourceColumnId": "HN951"
+        },
+        {
+            "id": "HN952",
+            "sourceColumnId": "HN952"
+        },
+        {
+            "id": "HN953",
+            "sourceColumnId": "HN953"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "http://semanticscience.org/resource/CHEMINF_0000001",
+                "label": {
+                    "uri": "http://semanticscience.org/resource/CHEMINF_000000",
+                    "rdfsLabel": "chemical entity"
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "HN951",
+                "label": {
+                    "uri": "HN951",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN951",
+                "columnName": "Grupo Químico",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN951",
+                        "domain": {
+                            "uri": "http://semanticscience.org/resource/CHEMINF_000000",
+                            "rdfsLabel": "chemical entity"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN951",
+                        "domain": {
+                            "uri": "http://semanticscience.org/resource/CHEMINF_000000",
+                            "rdfsLabel": "chemical entity"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN951",
+                        "domain": {
+                            "uri": "http://semanticscience.org/resource/CHEMINF_000000",
+                            "rdfsLabel": "chemical entity"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "http://www.pesticidesontology.com/pestcontrol.owl#Pesticide1",
+                "label": {
+                    "uri": "http://www.pesticidesontology.com/pestcontrol.owl#Pesticide",
+                    "rdfsLabel": null
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "HN952",
+                "label": {
+                    "uri": "HN952",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN952",
+                "columnName": "Classe",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN952",
+                        "domain": {
+                            "uri": "http://www.pesticidesontology.com/pestcontrol.owl#Pesticide",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN952",
+                        "domain": {
+                            "uri": "http://www.pesticidesontology.com/pestcontrol.owl#Pesticide",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN952",
+                        "domain": {
+                            "uri": "http://www.pesticidesontology.com/pestcontrol.owl#Pesticide",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "http://purl.obolibrary.org/obo/SYMP_00004621",
+                "label": {
+                    "uri": "http://purl.obolibrary.org/obo/SYMP_0000462",
+                    "rdfsLabel": "symptom"
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "HN953",
+                "label": {
+                    "uri": "HN953",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN953",
+                "columnName": "Sintomas de intoxicação aguda",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN953",
+                        "domain": {
+                            "uri": "http://purl.obolibrary.org/obo/SYMP_0000462",
+                            "rdfsLabel": "symptom"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN953",
+                        "domain": {
+                            "uri": "http://purl.obolibrary.org/obo/SYMP_0000462",
+                            "rdfsLabel": "symptom"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN953",
+                        "domain": {
+                            "uri": "http://purl.obolibrary.org/obo/SYMP_0000462",
+                            "rdfsLabel": "symptom"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            }
+        ],
+        "links": [
+            {
+                "id": "http://semanticscience.org/resource/CHEMINF_0000001---http://isi.edu/integration/karma/dev#classLink---HN951",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            },
+            {
+                "id": "http://www.pesticidesontology.com/pestcontrol.owl#Pesticide1---http://isi.edu/integration/karma/dev#classLink---HN952",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            },
+            {
+                "id": "http://purl.obolibrary.org/obo/SYMP_00004621---http://isi.edu/integration/karma/dev#classLink---HN953",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            }
+        ]
+    }
+}
