@@ -1,0 +1,17 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="agrotoxicos_doencas_tratado.csv"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="CHEMINF_0000001"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="Grupo Químico"];
+n4[style="filled",color="white",fillcolor="lightgray",label="Pesticide1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="Classe"];
+n6[style="filled",color="white",fillcolor="lightgray",label="SYMP_00004621"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="Sintomas de intoxicação aguda"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="classLink"]
+n4 -> n5[color="brown",fontcolor="black",label="classLink"]
+n6 -> n7[color="brown",fontcolor="black",label="classLink"]
+}
